@@ -1,0 +1,323 @@
+EESchema Schematic File Version 4
+LIBS:Bachelorprojekt-cache
+EELAYER 30 0
+EELAYER END
+$Descr User 8268 5827
+encoding utf-8
+Sheet 1 1
+Title "Bachelorprojekt"
+Date "2019-11-12"
+Rev ""
+Comp "Onno Eberhard"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R?
+U 1 1 5DCB311B
+P 5850 2950
+F 0 "R?" H 5920 2996 50  0001 L CNN
+F 1 "100Ω" V 5965 2950 50  0000 C CNN
+F 2 "" V 5780 2950 50  0001 C CNN
+F 3 "~" H 5850 2950 50  0001 C CNN
+	1    5850 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Photo_ALT D?
+U 1 1 5DCAFBF1
+P 5200 1600
+F 0 "D?" V 5196 1522 50  0001 R CNN
+F 1 "D_Photo_ALT" V 5105 1522 50  0001 R CNN
+F 2 "" H 5150 1600 50  0001 C CNN
+F 3 "~" H 5150 1600 50  0001 C CNN
+	1    5200 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DCAE922
+P 6000 1950
+F 0 "R?" H 6070 1996 50  0001 L CNN
+F 1 "75Ω" H 6070 1950 50  0000 L CNN
+F 2 "" V 5930 1950 50  0001 C CNN
+F 3 "~" H 6000 1950 50  0001 C CNN
+	1    6000 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:MMBF170 Q?
+U 1 1 5DCAC28D
+P 5400 3050
+F 0 "Q?" H 5606 3096 50  0001 L CNN
+F 1 "MMBF170" V 5651 3050 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5600 2975 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30104.pdf" H 5400 3050 50  0001 L CNN
+	1    5400 3050
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:Opamp_Dual_Generic U?
+U 1 1 5DCA8A87
+P 5700 1200
+F 0 "U?" H 5700 1567 50  0001 C CNN
+F 1 "Opamp_Dual_Generic" H 5700 1475 50  0001 C CNN
+F 2 "" H 5700 1200 50  0001 C CNN
+F 3 "~" H 5700 1200 50  0001 C CNN
+	1    5700 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DCB74D1
+P 1250 900
+F 0 "#PWR?" H 1250 750 50  0001 C CNN
+F 1 "+5V" H 1265 1073 50  0000 C CNN
+F 2 "" H 1250 900 50  0001 C CNN
+F 3 "" H 1250 900 50  0001 C CNN
+	1    1250 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DCFBB08
+P 1250 1800
+F 0 "R?" H 1320 1846 50  0001 L CNN
+F 1 "33Ω" H 1320 1800 50  0000 L CNN
+F 2 "" V 1180 1800 50  0001 C CNN
+F 3 "~" H 1250 1800 50  0001 C CNN
+	1    1250 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:MMBF170 Q?
+U 1 1 5DCFCF64
+P 1350 3950
+F 0 "Q?" H 1556 3996 50  0001 L CNN
+F 1 "BS170" H 1556 3950 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1550 3875 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30104.pdf" H 1350 3950 50  0001 L CNN
+	1    1350 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CUSTOM:TES1-0521 U?
+U 1 1 5DD26C7B
+P 3100 1300
+F 0 "U?" H 3100 1865 50  0001 C CNN
+F 1 "TES 1-0521" H 3100 1773 50  0000 C CNN
+F 2 "" H 3350 1750 50  0001 C CNN
+F 3 "" H 3350 1750 50  0001 C CNN
+	1    3100 1300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5DCB0E35
+P 4100 1150
+F 0 "C?" H 4218 1196 50  0001 L CNN
+F 1 "100nF" H 4218 1150 50  0000 L CNN
+F 2 "" H 4138 1000 50  0001 C CNN
+F 3 "~" H 4100 1150 50  0001 C CNN
+	1    4100 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5DCB27B2
+P 4100 1450
+F 0 "C?" H 4218 1496 50  0001 L CNN
+F 1 "100nF" H 4218 1450 50  0000 L CNN
+F 2 "" H 4138 1300 50  0001 C CNN
+F 3 "~" H 4100 1450 50  0001 C CNN
+	1    4100 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 1300 5200 1300
+Wire Wire Line
+	5200 1300 5200 1100
+Wire Wire Line
+	5200 1100 5400 1100
+Wire Wire Line
+	6000 2100 6000 2200
+$Comp
+L Device:C C?
+U 1 1 5DCB370E
+P 5700 1650
+F 0 "C?" H 5815 1696 50  0001 L CNN
+F 1 "40pF" V 5860 1650 50  0000 C CNN
+F 2 "" H 5738 1500 50  0001 C CNN
+F 3 "~" H 5700 1650 50  0001 C CNN
+	1    5700 1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5400 1650 5550 1650
+Wire Wire Line
+	5850 1650 6000 1650
+Connection ~ 6000 1650
+Wire Wire Line
+	6000 1650 6000 1800
+Wire Wire Line
+	6000 1200 6000 1650
+Wire Wire Line
+	5400 1300 5400 1650
+Wire Wire Line
+	5200 1300 5200 1500
+Connection ~ 5200 1300
+Wire Wire Line
+	5200 1800 5200 2000
+Wire Wire Line
+	5400 1650 5400 2000
+Wire Wire Line
+	5400 2000 5200 2000
+Connection ~ 5400 1650
+Connection ~ 5200 2000
+Wire Wire Line
+	5200 2000 5200 2200
+Wire Wire Line
+	5200 2300 5200 2550
+Wire Wire Line
+	6000 2300 6000 2550
+Wire Wire Line
+	5600 2950 5700 2950
+Wire Wire Line
+	5750 2550 6000 2550
+Connection ~ 6000 2550
+Wire Wire Line
+	6000 2550 6000 2950
+Wire Wire Line
+	5450 2550 5200 2550
+Connection ~ 5200 2550
+Wire Wire Line
+	5200 2550 5200 2950
+$Comp
+L power:GND #PWR?
+U 1 1 5DE133F2
+P 1250 4900
+F 0 "#PWR?" H 1250 4650 50  0001 C CNN
+F 1 "GND" H 1255 4727 50  0000 C CNN
+F 2 "" H 1250 4900 50  0001 C CNN
+F 3 "" H 1250 4900 50  0001 C CNN
+	1    1250 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 1950 1250 2700
+Wire Wire Line
+	1250 3000 1250 3750
+Wire Wire Line
+	3500 1000 4100 1000
+Connection ~ 4100 1000
+Wire Wire Line
+	4100 1000 4850 1000
+Wire Wire Line
+	4850 1300 4100 1300
+Connection ~ 4100 1300
+Wire Wire Line
+	4100 1300 3500 1300
+Wire Wire Line
+	3500 1600 4100 1600
+Connection ~ 4100 1600
+Wire Wire Line
+	4100 1600 4850 1600
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5DE25252
+P 7200 2550
+F 0 "H?" H 7300 2599 50  0001 L CNN
+F 1 "MountingHole_Pad" H 7300 2508 50  0001 L CNN
+F 2 "" H 7200 2550 50  0001 C CNN
+F 3 "~" H 7200 2550 50  0001 C CNN
+	1    7200 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5DE284DA
+P 7200 3250
+F 0 "H?" H 7300 3299 50  0001 L CNN
+F 1 "MountingHole_Pad" H 7300 3208 50  0001 L CNN
+F 2 "" H 7200 3250 50  0001 C CNN
+F 3 "~" H 7200 3250 50  0001 C CNN
+	1    7200 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5DE28DFE
+P 7200 3950
+F 0 "H?" H 7300 3999 50  0001 L CNN
+F 1 "MountingHole_Pad" H 7300 3908 50  0001 L CNN
+F 2 "" H 7200 3950 50  0001 C CNN
+F 3 "~" H 7200 3950 50  0001 C CNN
+	1    7200 3950
+	0    1    1    0   
+$EndComp
+Text Label 6900 2550 0    50   ~ 0
+Output
+Text Label 6900 3250 0    50   ~ 0
+Reset
+Text Label 6900 3950 0    50   ~ 0
+Pulse
+Wire Wire Line
+	2700 1000 1250 1000
+Wire Wire Line
+	2700 1300 2050 1300
+Wire Wire Line
+	2050 1300 2050 4750
+Wire Wire Line
+	2050 4750 1250 4750
+Connection ~ 1250 1000
+Wire Wire Line
+	1250 1000 1250 1650
+Connection ~ 1250 4750
+Wire Wire Line
+	1250 4750 1250 4900
+Wire Wire Line
+	1250 900  1250 1000
+Wire Wire Line
+	1250 4150 1250 4750
+Wire Wire Line
+	5400 3250 7100 3250
+Wire Wire Line
+	1550 3950 7100 3950
+Wire Wire Line
+	6000 2550 7100 2550
+$Comp
+L LED:SFH4550 D?
+U 1 1 5DD7BE67
+P 1250 2800
+F 0 "D?" V 1246 2953 50  0001 L CNN
+F 1 "SFH4550" V 1200 2953 50  0000 L CNN
+F 2 "LED_THT:LED_D5.0mm_IRGrey" H 1250 2975 50  0001 C CNN
+F 3 "http://www.osram-os.com/Graphics/XPic3/00116140_0.pdf" H 1200 2800 50  0001 C CNN
+	1    1250 2800
+	0    1    -1   0   
+$EndComp
+$Comp
+L CUSTOM:OPT301 U?
+U 1 1 5DD8E65F
+P 5600 1550
+F 0 "U?" H 6278 1538 50  0001 L CNN
+F 1 "OPT301" H 6278 1492 50  0000 L CNN
+F 2 "" H 5550 2350 50  0001 C CNN
+F 3 "" H 5550 2350 50  0001 C CNN
+	1    5600 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E1BA702
+P 5600 2550
+F 0 "C?" H 5715 2596 50  0001 L CNN
+F 1 "100nF" V 5760 2550 50  0000 C CNN
+F 2 "" H 5638 2400 50  0001 C CNN
+F 3 "~" H 5600 2550 50  0001 C CNN
+	1    5600 2550
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC

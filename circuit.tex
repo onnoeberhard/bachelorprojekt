@@ -1,0 +1,26 @@
+\documentclass{article}
+
+\usepackage{tikz}
+\usepackage[siunitx]{circuitikz}
+\ctikzset{tripoles/mos style/arrows}
+
+\begin{document}
+
+\begin{figure}[h!]
+  \begin{center}
+    \begin{circuitikz}
+        \node[nigfete, label=right:BS170](fet) at (0,0) {};
+        \draw (fet.D)
+            to [led, invert, l_=SFH4550] ++(0,2)
+            % to [short] (0,4)
+            to [R,l_=$R$] ++(0,2)
+            to node[vcc]{+5\,\textnormal{V}} +(0,0);
+            % to [short] (0,4);
+        \draw (fet.S) -- ++(0,-0.5) node[rground]{};
+        \draw (fet.G) to[short, -o] ++(-1.5, 0) node[anchor=east]{Pulse};
+            % to node[vcc]{+15\,\textnormal{V}} (-2,0);
+    \end{circuitikz}
+  \end{center}
+\end{figure}
+
+\end{document}
